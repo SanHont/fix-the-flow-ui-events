@@ -40,18 +40,15 @@ a:hover {
 /* UI Event Classes */
 
 /* Jump animation on the interaction link */
-a:nth-of-type(12) {
+a:nth-of-type(1) {
   position: relative;
-  background: var(--highlight-secondary);
-  color: var(--secondary);
-  border-color: var(--secondary);
 }
 
 .jump {
   animation-name: jump;
   animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
   animation-duration: 1.2s;
-  animation-iteration-count: 1;
+  animation-iteration-count: infinite;
 }
 
 @keyframes jump {
@@ -79,3 +76,345 @@ a:nth-of-type(12) {
 }
 
 /* Jouw animaties */
+
+/* ------------------------------------ */
+/* ------------------2----------------- */
+/* ------------------------------------ */
+
+a:nth-of-type(2) {
+  position: relative;
+}
+
+.nth-of-type-active {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.rotate {
+  animation-name: rotate;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: scale(1, 1) rotate(0deg);
+  }
+  10% {
+    transform: scale(1, 1) rotate(36deg);
+  }
+  20% {
+    transform: scale(1, 1) rotate(72deg);
+  }
+  30% {
+    transform: scale(1, 1) rotate(108deg);
+  }
+  40% {
+    transform: scale(1, 1) rotate(144deg);
+  }
+  50% {
+    transform: scale(1, 1) rotate(180deg);
+  }
+  60% {
+    transform: scale(1, 1) rotate(216deg);
+  }
+  70% {
+    transform: scale(1, 1) rotate(252deg);
+  }
+  80% {
+    transform: scale(1, 1) rotate(288deg);
+  }
+  90% {
+    transform: scale(1, 1) rotate(324deg);
+  }
+  100% {
+    transform: scale(1, 1) rotate(360deg);
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------3----------------- */
+/* ------------------------------------ */
+
+a:nth-of-type(3) {
+  position: relative;
+}
+
+.wiggle {
+  animation-name: wiggle;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes wiggle {
+  0%, 7% {
+    transform: scale(1, 1) rotateZ(0);
+  }
+  15% {
+    transform: scale(1.1, 1.1) rotateZ(-15deg);
+  }
+  20% {
+    transform: scale(1.2, 1.2) rotateZ(10deg);
+  }
+  25% {
+    transform: scale(1.3, 1.3) rotateZ(-10deg);
+  }
+  30% {
+    transform: scale(1.2, 1.2) rotateZ(6deg);
+  }
+  35% {
+    transform: scale(1.1, 1.1) rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: scale(1, 1) rotateZ(0);
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------4----------------- */
+/* ------------------------------------ */
+
+a:nth-of-type(4) {
+  position: relative;
+}
+
+.disco {
+  animation-name: disco;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes disco {
+  0% {
+    transform: rotate(0deg);
+    background: #FF0000;
+  }
+  10% {
+    transform: rotate( 10deg);
+    background: #FF8000;
+  }
+  20% {
+    transform: rotate(20deg);
+    background: #FFFF00;
+  }
+  30% {
+    transform: rotate(10deg);
+    background: #80FF00;
+  }
+  40% {
+    transform: rotate(0deg);
+    background: #00FF00;
+  }
+  50% {
+    transform: rotate(-10deg);
+    background: #00FF80;
+  }
+  60% {
+    transform: rotate(-20deg);
+    background: #00FFFF;
+  }
+  70% {
+    transform: rotate(-10deg);
+    background: #0080FF;
+  }
+  80% {
+    transform: rotate(0deg);
+    background: #7F00FF;
+  }
+  90% {
+    transform: rotate(10deg);
+    background: #FF00FF;
+  }
+  100% {
+    transform: rotate(0deg);
+    background: #FF007F;
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------5----------------- */
+/* ------------------------------------ */
+
+a:nth-of-type(5) {
+  position: relative;
+}
+
+.lefttoright {
+  animation-name: lefttoright;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes lefttoright {
+  0% {
+    transform: translateX(0rem);
+  }
+  25% {
+    transform: translateX(-1rem);
+  }
+  75% {
+    transform: translateX(1rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------6----------------- */
+/* ------------------------------------ */
+
+a:nth-of-type(6) {
+  position: relative;
+}
+
+.upanddown {
+  animation-name: upanddown;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes upanddown {
+  0% {
+    transform: translateY(0rem);
+  }
+  25% {
+    transform: translateY(-1rem);
+  }
+  75% {
+    transform: translateY(1rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------7----------------- */
+/* ------------------------------------ */
+
+a:nth-of-type(7) {
+  position: relative;
+}
+
+.error {
+  animation-name: error;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 0.1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes error {
+  0% {
+    transform: translateX(0.2rem);
+    background: #FF0000;
+    color: #fff;
+  }
+  50% {
+    transform: translateX(-0.2rem);
+    background: #FF0000;
+    color: #fff;
+  }
+  100% {
+    transform: translateX(0.2rem);
+    background: #FF0000;
+    color: #fff;
+  }
+  }
+
+/* ------------------------------------ */
+/* ------------------8----------------- */
+/* ------------------------------------ */
+
+a:nth-of-type(8) {
+  position: relative;
+}
+
+.zoom {
+  animation-name: zoom;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes zoom {
+  0%{
+    transform: scale(1,1);
+  }
+  50%{
+    transform: scale(0.5,0.5);
+  }
+  100%{
+    transform: scale(1,1);
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------9----------------- */
+/* ------------------------------------ */
+
+a:nth-of-type(9) {
+  position: relative;
+}
+
+.zoomin {
+  animation-name: zoomin;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes zoomin {
+  0%{
+    transform: scale(1,1);
+  }
+  50%{
+    transform: scale(1.5,1.5);
+  }
+  100%{
+    transform: scale(1,1);
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------10---------------- */
+/* ------------------------------------ */
+
+a:nth-of-type(10) {
+  position: relative;
+}
+
+.downrightupleft {
+  animation-name: downrightupleft;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes downrightupleft {
+  0%{
+    transform: translateY(3rem)
+  }
+  20%{
+    transform: translateY(3rem)
+  }
+  40%{
+    transform: translateX(3rem);
+  }
+  60%{
+    transform: translateY(-3rem);
+  }
+  80%{
+    transform: translateX(-3rem);
+  }
+  100%{
+    transform: translateY(3rem);
+  }
+}
