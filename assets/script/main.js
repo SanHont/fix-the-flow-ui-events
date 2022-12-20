@@ -37,7 +37,7 @@ wiggle.addEventListener('animationend', wiggleHandler)
 
 function wiggleHandler() {
   wiggle.classList.toggle('nth-of-type-active')
-  wiggle.classList.toggle('wiggle') 
+  wiggle.classList.toggle('wiggle')
 }
 
 /--------------------------------------------/;
@@ -65,7 +65,7 @@ lefttoright.addEventListener('animationend', lefttorightHandler)
 
 function lefttorightHandler() {
   lefttoright.classList.toggle('nth-of-type-active')
-  lefttoright.classList.toggle('lefttoright')  
+  lefttoright.classList.toggle('lefttoright')
 }
 
 /--------------------------------------------/;
@@ -79,7 +79,7 @@ upanddown.addEventListener('animationend', upanddownHandler)
 
 function upanddownHandler() {
   upanddown.classList.toggle('nth-of-type-active')
-  upanddown.classList.toggle('upanddown')  
+  upanddown.classList.toggle('upanddown')
 }
 
 /--------------------------------------------/;
@@ -93,7 +93,7 @@ error.addEventListener('animationend', errorHandler)
 
 function errorHandler() {
   error.classList.toggle('nth-of-type-active')
-  error.classList.toggle('error')  
+  error.classList.toggle('error')
 }
 
 /--------------------------------------------/;
@@ -107,7 +107,7 @@ zoom.addEventListener('animationend', zoomHandler)
 
 function zoomHandler() {
   zoom.classList.toggle('nth-of-type-active')
-  zoom.classList.toggle('zoom')  
+  zoom.classList.toggle('zoom')
 }
 
 /--------------------------------------------/;
@@ -121,7 +121,7 @@ zoomin.addEventListener('animationend', zoominHandler)
 
 function zoominHandler() {
   zoomin.classList.toggle('nth-of-type-active')
-  zoomin.classList.toggle('zoomin')  
+  zoomin.classList.toggle('zoomin')
 }
 
 /--------------------------------------------/;
@@ -135,5 +135,56 @@ downrightupleft.addEventListener('animationend', downrightupleftHandler)
 
 function downrightupleftHandler() {
   downrightupleft.classList.toggle('nth-of-type-active')
-  downrightupleft.classList.toggle('downrightupleft')  
+  downrightupleft.classList.toggle('downrightupleft')
 }
+
+
+/--------------------------------------------/;
+/-----------------------11-------------------/;
+/--------------------------------------------/;
+
+let events = document.querySelector('a:nth-of-type(11)')
+
+events.addEventListener('click', eventsHandler)
+events.addEventListener('animationend', eventsHandler)
+
+function eventsHandler() {
+  events.classList.toggle('nth-of-type-active')
+  events.classList.toggle('events')
+}
+
+/--------------------------------------------/;
+/-----------------------12-------------------/;
+/--------------------------------------------/;
+
+let interaction = document.querySelector('a:nth-of-type(12)')
+
+interaction.addEventListener('click', interactionHandler)
+interaction.addEventListener('animationend', interactionHandler)
+
+function interactionHandler() {
+  interaction.classList.toggle('nth-of-type-active')
+  interaction.classList.toggle('interaction')
+}
+
+/--------------------------------------------/;
+/-----------------------13-------------------/;
+/--------------------------------------------/;
+
+let flip = document.querySelector('a:nth-of-type(13)')
+
+flip.addEventListener('click', flipHandler)
+flip.addEventListener('animationend', flipHandler)
+
+function flipHandler() {
+  flip.classList.toggle('nth-of-type-active')
+  flip.classList.toggle('flip')
+}
+
+// var cards = document.querySelectorAll('.card');
+
+// [...cards].forEach((card)=>{
+//   card.addEventListener( 'click', function() {
+//     card.classList.toggle('is-flipped');
+//   });
+// });
